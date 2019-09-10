@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "webpack": "^4.39.3"
+  },
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "a mock server that make FED life easier.",
+  "main": "index.js",
+  "author": "Gino Wu",
+  "license": "MIT"
+}
