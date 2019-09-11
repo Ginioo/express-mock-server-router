@@ -14,7 +14,7 @@ export default (dataRootPath) => (req, res, next) => {
             const data = readFileSync(file);
             res.send(JSON.parse(data));
         } else {
-            console.error(JSON.stringify(err));
+            // console.error(JSON.stringify(err));
             next();
         }
     });
