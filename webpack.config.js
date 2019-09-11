@@ -1,11 +1,18 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: process.env.ENV === 'production' ? 'production' : 'development',
     target: 'node',
-    entry: './src/index.js',
+    entry: {
+        test: './tests/index.js',
+    },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'index.js'
+        filename: '[name].js'
+    },
+    resolve: {
+        alias: {
+            src: path.resolve(__dirname, 'src')
+        }
     }
 };

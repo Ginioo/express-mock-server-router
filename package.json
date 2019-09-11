@@ -2,10 +2,10 @@
   "dependencies": {
     "webpack": "^4.39.3"
   },
-  "name": "mock-server",
+  "name": "express-mock-server-router",
   "version": "1.0.0",
   "description": "a mock server that make FED life easier.",
-  "main": "./build/",
+  "main": "./src/mockServerRouter.js",
   "author": "Gino Wu",
   "license": "MIT",
   "devDependencies": {
@@ -13,10 +13,13 @@
     "@babel/preset-env": "^7.6.0",
     "babel-loader": "^8.0.6",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.15",
     "path": "^0.12.7",
     "webpack-cli": "^3.3.8"
   },
   "scripts": {
-    "start": "webpack -c webpack.config.js && node build/"
+    "build": "ENV=production webpack -c webpack.config.js",
+    "start": "webpack -c webpack.config.js && MOCK_SERVER_PORT=3001 node build/test.js"
   }
 }
