@@ -5,12 +5,18 @@
   "name": "mock-server",
   "version": "1.0.0",
   "description": "a mock server that make FED life easier.",
-  "main": "index.js",
+  "main": "./build/",
   "author": "Gino Wu",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
     "express": "^4.17.1",
     "path": "^0.12.7",
     "webpack-cli": "^3.3.8"
+  },
+  "scripts": {
+    "start": "webpack -c webpack.config.js && node build/"
   }
 }
