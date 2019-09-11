@@ -1,3 +1,10 @@
+const path = require('path');
+
 module.exports = {
-    entry: ''
+    mode: 'development',
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: '[name].[hash].js'
+    }
 };
