@@ -13,3 +13,7 @@ Build mock server service image
 ```
 docker build ./config/docker -t ms-service
 ```
+Run a mock server on port 3001
+```
+ docker run -itd -v $(pwd)/data:/root/mock-server/data -p 3001:3001 --name local-ms-service ms-service 
+```
