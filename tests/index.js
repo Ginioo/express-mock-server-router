@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import mockServerRouter from 'src/mockServerRouter';
 
 const app = express();
@@ -10,6 +11,7 @@ const router = mockServerRouter({
     ]
 });
 
+app.use(cors());
 app.use(router);
 
 app.get('/', (req, res) => {
