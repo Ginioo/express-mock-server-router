@@ -4,7 +4,7 @@ import path from 'path';
 
 export default (dataRootPath) => (req, res, next) => {
     dataRootPath = dataRootPath.replace('/', '');
-    const subPath = split(req.originalUrl, req.baseUrl).pop().replace('/', '');
+    const subPath = split(split(req.originalUrl, req.baseUrl).pop().replace('/', ''), '?').shift();
     const filename = req.method.toLowerCase() + '.json';
     const file = path.resolve(dataRootPath, subPath, filename);
 
