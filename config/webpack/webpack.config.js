@@ -5,7 +5,9 @@ module.exports = {
     mode: process.env.ENV === 'production' ? 'production' : 'development',
     target: 'node',
     entry: {
-        test: path.resolve(projectRootPath, 'tests', 'index.js'),
+        test: process.env.ENV === 'production'
+            ? path.resolve(projectRootPath, 'src', 'index.js')
+            : path.resolve(projectRootPath, 'tests', 'index.js'),
     },
     output: {
         path: path.resolve(projectRootPath, 'build'),

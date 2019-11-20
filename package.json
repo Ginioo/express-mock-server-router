@@ -3,7 +3,7 @@
     "webpack": "^4.39.3"
   },
   "name": "express-mock-server-router",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a mock server that make FED life easier.",
   "main": "./src/mockServerRouter.js",
   "author": "Gino Wu",
@@ -17,6 +17,7 @@
     "fs": "^0.0.1-security",
     "lodash": "^4.17.15",
     "path": "^0.12.7",
+    "uuid": "^3.3.3",
     "webpack-cli": "^3.3.8"
   },
   "scripts": {

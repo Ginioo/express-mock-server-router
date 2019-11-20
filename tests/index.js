@@ -4,7 +4,7 @@ import mockServerRouter from 'src/mockServerRouter';
 
 const app = express();
 const port = process.env.MOCK_SERVER_PORT || 3000;
-const mockAPIUrl = '/playground';
+const mockAPIUrl = '/api/v1.mock';
 const router = mockServerRouter({
     routes: [
         { url: mockAPIUrl, path: 'data/' }

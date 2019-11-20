@@ -9,13 +9,12 @@ import mockServerRouter from 'express-mock-server-router';
 
 const app = express();
 const port = 3000;
-const mockAPIUrl = '/api/v1';
-const router = mockServerRouter({
+
+app.use(mockServerRouter({
     routes: [
-        { url: mockAPIUrl, path: 'data/' }
+        { url: '/api/v1.mock', path: 'data/' }
     ]
-});
-app.use(router);
+}));
 
 app.get('/', (req, res) => {
     res.send(`mock server is running on <a href="${mockAPIUrl}"}>${mockAPIUrl}</a>`);
