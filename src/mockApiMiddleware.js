@@ -14,7 +14,6 @@ export default (dataRootPath) => (req, res, next) => {
             // File exists
             const data = readFileSync(file);
             const parsedData = JSON.parse(data);
-
             let response = {};
             if (isArray(parsedData)) {
                 response = map(parsedData, item => {
@@ -28,7 +27,7 @@ export default (dataRootPath) => (req, res, next) => {
                     }
                 });
             } else if (isObject(parsedData)) {
-                const response = { ...parsedData };
+                response = { ...parsedData };
                 const id = get(parsedData, 'id', false);
                 if (id !== false && id.toString().toLowerCase() === '_uid_') {
                     response.id = uuid.v4();
