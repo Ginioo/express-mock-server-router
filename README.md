@@ -19,11 +19,12 @@ import mockServerRouter from 'express-mock-server-router';
 
 const app = express();
 const port = 3000;
+const mockAPIUrl = '/api/v1.mock';
 
 // `data/` is a under your project root. 
 app.use(mockServerRouter({
     routes: [
-        { url: '/api/v1.mock', path: 'data/' }
+        { url: mockAPIUrl, path: 'data/' }
     ]
 }));
 
@@ -38,7 +39,7 @@ app.listen(port, () => {
 ```
 ### Demo
 ```
-yarn install
+yarn
 
 yarn start
 ```

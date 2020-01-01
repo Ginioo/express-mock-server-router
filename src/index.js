@@ -1,3 +1,3 @@
-import mockServerRouter from 'src/mockServerRouter';
+import mockServerRouter from './mockServerRouter';
 
 export default mockServerRouter;

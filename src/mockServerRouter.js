@@ -1,6 +1,6 @@
 import map from 'lodash/map';
 import { Router } from 'express';
-import mockApiMiddleware from 'src/mockApiMiddleware';
+import mockApiMiddleware from './mockApiMiddleware';
 
 const mockServerRouter = ({ routes = [] }) => {
     const router = Router();
