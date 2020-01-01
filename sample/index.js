@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import mockServerRouter from 'src/mockServerRouter';
+import mockServerRouter from 'src/../build/index.js';
 
 const app = express();
 const port = process.env.MOCK_SERVER_PORT || 3000;
