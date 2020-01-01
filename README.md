@@ -1,6 +1,6 @@
 # Mock Server Router
 
-> This is an express router for mock api server
+> This is an express routing middleware for easily build up a mock restful API server.
 
 ### Usage
 ```javascript
@@ -10,6 +10,7 @@ import mockServerRouter from 'express-mock-server-router';
 const app = express();
 const port = 3000;
 
+// `data/` is a under your project root. 
 app.use(mockServerRouter({
     routes: [
         { url: '/api/v1.mock', path: 'data/' }
