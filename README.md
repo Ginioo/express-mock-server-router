@@ -2,6 +2,16 @@
 
 > This is an express routing middleware for easily build up a mock restful API server.
 
+### Install
+##### npm
+```
+npm install -D express-mock-server-router
+```
+##### yarn
+```
+yarn add express-mock-server-router
+```
+
 ### Usage
 ```javascript
 import express from 'express';
