@@ -10,7 +10,7 @@
 ### Install
 ##### npm
 ```
-npm install -D express-mock-server-router
+npm install express-mock-server-router
 ```
 ##### yarn
 ```
