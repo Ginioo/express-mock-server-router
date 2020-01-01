@@ -2,6 +2,8 @@
 
 > This is an express routing middleware for easily build up a mock restful API server.
 
+### [Demo](https://codesandbox.io/embed/sweet-browser-c78s3?fontsize=14&hidenavigation=1&theme=dark)
+
 ### Install
 ##### npm
 ```
@@ -37,4 +39,3 @@ app.listen(port, () => {
 });
 
 ```
-### [Demo](https://codesandbox.io/embed/sweet-browser-c78s3?fontsize=14&hidenavigation=1&theme=dark)
