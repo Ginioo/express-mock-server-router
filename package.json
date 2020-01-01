@@ -5,7 +5,7 @@
   "repository": {
     "type" : "git",
     "url" : "https://github.com/Ginioo/express-mock-server-router.git"
-  }
+  },
   "main": "build/index.js",
   "author": "Gino Wu",
   "license": "MIT",
