@@ -1,6 +1,8 @@
 data
 build
+dev
 node_modules
 .idea
 tags
 .DS_Store
+.yarn.lock

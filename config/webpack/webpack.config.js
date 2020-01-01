@@ -5,17 +5,24 @@ module.exports = {
     mode: process.env.ENV === 'production' ? 'production' : 'development',
     target: 'node',
     entry: {
-        test: process.env.ENV === 'production'
+        index: process.env.ENV === 'production'
             ? path.resolve(projectRootPath, 'src', 'index.js')
-            : path.resolve(projectRootPath, 'tests', 'index.js'),
+            : path.resolve(projectRootPath, 'sample', 'index.js'),
     },
     output: {
-        path: path.resolve(projectRootPath, 'build'),
+        path: process.env.ENV === 'production'
+            ? path.resolve(projectRootPath, 'build')
+            : path.resolve(projectRootPath, 'dev') ,
         filename: '[name].js'
     },
     resolve: {
         alias: {
             src: path.resolve(projectRootPath, 'src')
         }
+    },
+    module: {
+        rules: [
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        ]
     }
 };
