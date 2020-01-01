@@ -1,4 +1,4 @@
-# Mock Server Router
+# Express Mock Server Router
 
 > This is an express routing middleware for easily build up a mock restful API server.
 
