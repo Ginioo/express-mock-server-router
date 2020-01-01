@@ -37,9 +37,4 @@ app.listen(port, () => {
 });
 
 ```
-### Demo
-```
-yarn
-
-yarn start
-```
+### [Demo](https://codesandbox.io/embed/sweet-browser-c78s3?fontsize=14&hidenavigation=1&theme=dark)
