@@ -4,7 +4,7 @@
   "description": "An express routing middleware for easily build up a mock restful API server.",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/Ginioo/express-mock-server-router.git"
+    "url" : "github:Ginioo/express-mock-server-router"
   },
   "main": "build/index.js",
   "author": "Gino Wu",
