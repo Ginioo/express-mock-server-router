@@ -1,7 +1,5 @@
 # Express Mock Server Router
 
-[![buddy pipeline](https://app.buddy.works/nikeorzgithub/express-mock-server-router/pipelines/pipeline/231450/badge.svg?token=b14695cb0d8354d4ed7b640a2ea9ea5169108947844d14785c4c51c255f921b6 "buddy pipeline")](https://app.buddy.works/nikeorzgithub/express-mock-server-router/pipelines/pipeline/231450)
-
 > This is an express routing middleware for easily build up a mock restful API server.
 
 
