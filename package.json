@@ -18,7 +18,6 @@
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
-    "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
     "cors": "^2.8.5",
     "webpack": "^4.39.3",
@@ -27,5 +26,10 @@
   "scripts": {
     "build": "npx babel src --out-dir build",
     "start": "webpack -c webpack.config.js && MOCK_SERVER_PORT=3001 node dev/index.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
